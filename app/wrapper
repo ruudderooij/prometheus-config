@@ -1,0 +1,7 @@
+#!/bin/sh
+
+while true
+do
+    /usr/src/app/gen_target_groups.py > /etc/prometheus/targets.yml.new && mv /etc/prometheus/targets.yml.new /etc/prometheus/targets.yml
+    sleep 60
+done
